@@ -15,7 +15,7 @@
               <div class="col-md-12">
                 <div class="panel">
                   <div class="panel-body">
-                  <div class="responsive-table">
+                  <div class="table-reponsive">
                     <table class="table table-striped table-bordered" width="100%" cellspacing="0">
                     <thead>
                       <tr>

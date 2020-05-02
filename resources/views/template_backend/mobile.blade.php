@@ -15,12 +15,14 @@
                     </li>
                     <li class="ripple">
                       <a class="tree-toggle nav-header">
-                        <span class="fa-diamond fa"></span>Layout
+                        <span class="fa-diamond fa"></span>Online
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                        <li><a href="topnav.html">Top Navigation</a></li>
-                        <li><a href="boxed.html">Boxed</a></li>
+                        <li><a href="/pengajuan/create">Form Pengajuan</a></li>
+                        <li><a href="/pengajuan">Data Pengajuan</a></li>
+                        <li><a href="/pengajuan/tampilsetuju">Data Persetujuan</a></li>
+                        <li><a href="/pengajuan/tampilclose">Data Close</a></li>
                       </ul>
                     </li>
                     <li class="ripple">

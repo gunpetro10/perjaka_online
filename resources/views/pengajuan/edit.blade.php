@@ -6,11 +6,11 @@
 <form method="post" action="/pengajuan/update/{{ $ptk->id }}">
 {{ csrf_field() }}
 
-<div class="form-row">
-            <div class="form-group col-md-12">
+        <div class="form-row">
+            <div hidden class="form-group col-md-12">
                 <label for="inputEmail3" class="col-sm-4 col-form-label text-primary">N. Booking</label>
-                <input type="text" class="form-control @error('registerKaryawan') is-invalid @enderror" id="registerKaryawan" placeholder="" name="bookNumber" value="{{ $ptk->bookNumber }}" readonly>
-                @error('registerKaryawan') <div class="class invalid-feedback">{{ $message}}</div>@enderror
+                <input type="text" class="form-control @error('bookNumber') is-invalid @enderror" id="bookNumber" placeholder="" name="bookNumber" value="{{ $ptk->bookNumber }}" readonly>
+                @error('bookNumber') <div class="class invalid-feedback">{{ $message}}</div>@enderror
             </div>
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -118,6 +118,13 @@
                 @error('nama') <div class="class invalid-feedback">{{ $message}}</div>@enderror
             </div>
         </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="inputEmail3" class="col-sm-4 col-form-label text-primary">No. Telpon</label>
+                <input type="text" class="form-control @error('phoneNumber') is-invalid @enderror" id="phoneNumber" placeholder="" name="phoneNumber" value="{{ $ptk->phoneNumber }}">
+                @error('phoneNumber') <div class="class invalid-feedback">{{ $message}}</div>@enderror
+            </div>
         </div>
         </div>
         <div class="form-group col-md-4">

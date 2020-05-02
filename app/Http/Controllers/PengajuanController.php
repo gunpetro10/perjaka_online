@@ -119,6 +119,7 @@ class PengajuanController extends Controller
         $follower = $request->input('follower');
         $tripDescription = $request->input('tripDescription');
         $tripDestination = $request->input('tripDestination');
+        $phoneNumber = $request->input('phoneNumber');
         
         $newRealisasi = Maskenonline::findOrFail($id);
         $newRealisasi->unitLv0 = $unitLv0;
@@ -135,6 +136,7 @@ class PengajuanController extends Controller
         $newRealisasi->follower = $follower;
         $newRealisasi->tripDescription = $tripDescription;
         $newRealisasi->tripDestination = $tripDestination;
+        $newRealisasi->phoneNumber = $phoneNumber;
         $newRealisasi->save();
         
         return redirect('pengajuan');

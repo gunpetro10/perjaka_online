@@ -41,7 +41,7 @@
               <div class="panel-body text-center">
                   <h1 class="atomic-symbol">WG</h1>
                   <p class="atomic-mass">Dep. Yanum</p>
-                  <p class="element-name">Transport</p>
+                  <p class="element-name">Perjaka</p>
 
                   <i class="icons icon-arrow-down"></i>
                   <div class="form-group form-animate-text" style="margin-top:40px !important;">
