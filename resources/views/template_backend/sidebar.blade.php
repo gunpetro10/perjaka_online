@@ -13,16 +13,18 @@
                         <span class="fa-angle-right fa right-arrow text-right"></span>
                       </a>
                       <ul class="nav nav-list tree">
-                          <li><a href="dashboard-v1.html">Dashboard v.1</a></li>
-                          <li><a href="dashboard-v2.html">Dashboard v.2</a></li>
+                          <li><a href="/dashboard">Dashboard</a></li>
+                          <li><a href="/dashboard/user">Dashboard</a></li>
                       </ul>
                     </li>
                     <li class="ripple"><a class="tree-toggle nav-header"><span class="fa fa-table"></span> Online  <span class="fa-angle-right fa right-arrow text-right"></span> </a>
                       <ul class="nav nav-list tree">
                         <li><a href="/pengajuan/create">Form Pengajuan</a></li>
                         <li><a href="/pengajuan">Data Pengajuan</a></li>
+                        @if (auth()->user()->role == 'admin')
                         <li><a href="/pengajuan/tampilsetuju">Data Persetujuan</a></li>
                         <li><a href="/pengajuan/tampilclose">Data Close</a></li>
+                        @endif
                       </ul>
                     </li>
 

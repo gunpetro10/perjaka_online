@@ -26,7 +26,7 @@
                                         </div>
                                       </div>
                                       <div class="panel-body text-center">
-                                        <h1>{{$dashboard->where('reqStatus','Pengajuan')->count()}}</h1>
+                                        <h1>{{$dashboard->where('reqStatus','=','diajukan')->where('ket','=','UM')->count()}}</h1>
                                         <p>Pengajuan Baru</p>
                                         <hr/>
                                       </div>

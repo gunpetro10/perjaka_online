@@ -200,7 +200,7 @@
             <div class="panel box-shadow-none content-header">
                   <div class="panel-body">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h3 class="animated fadeInLeft">Selamat Datang Aplikasine Konco2 Perjaka</h3>
+                        <h3 class="animated fadeInLeft">Selamat Datang Di Aplikasine Konco2 Perjaka</h3>
                         <p class="animated fadeInDown">
                          Monggo Login <span class="fa-angle-right fa"></span> Di Pojok Kanan Atas
                         </p>

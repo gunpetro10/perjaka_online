@@ -39,7 +39,7 @@
           <div class="panel periodic-login">
               <span class="atomic-number">28</span>
               <div class="panel-body text-center">
-                  <h1 class="atomic-symbol">WG</h1>
+                  <h3 class="atomic-symbol">PG</h3>
                   <p class="atomic-mass">Dep. Yanum</p>
                   <p class="element-name">Perjaka</p>
 

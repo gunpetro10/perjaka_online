@@ -9,6 +9,7 @@
         <div class="form-group col-md-4">
             <button type="submit" class="btn ripple-infinite btn-raised btn-warning">Cari</button>
             <button type="reset" class="btn ripple-infinite btn-raised btn-primary" onclick="window.location.href='/pengajuan'">Reset</button>
+            <a href="/dashboard" class="btn ripple-infinite btn-raised btn-success">Dashboard</a>
         </div> 
 </form>
             <div class="col-md-12 top-7 padding-0">
@@ -63,4 +64,11 @@
               </div>
             </div>  
           </div>
+          <div class="form-group col-md-4">
+            @if (auth()->user()->role == 'admin')
+            <a href="/pengajuan" class="btn ripple-infinite btn-raised btn-info">Pengajuan</a>
+            <a href="/pengajuan/tampilsetuju" class="btn ripple-infinite btn-raised btn-warning">Disetujui</a>
+            <a href="/pengajuan/tampilclose" class="btn ripple-infinite btn-raised btn-success">Selesai</a>
+            @endif
+          </div> 
 @endsection

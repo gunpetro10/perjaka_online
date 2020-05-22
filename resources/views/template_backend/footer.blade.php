@@ -16,7 +16,7 @@
 </footer>
 
 <!-- start: Javascript -->
-<script src="{{ asset('asset/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('asset/js/jquery.min.js')}}"></script>
     <script src="{{ asset('asset/js/jquery.ui.min.js')}}"></script>
     <script src="{{ asset('asset/js/bootstrap.min.js')}}"></script>
 

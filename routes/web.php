@@ -51,6 +51,8 @@ Route::group(['middleware' => ['auth','checkRole:admin']],function(){
     //Laporan
     Route::get('/laporan/tampil','LaporanController@tampil');
     Route::get('/laporan/nopol','LaporanController@nopol');
+    Route::get('/laporan/laporan','LaporanController@laporan');
+    Route::get('/laporan/preview/{awal}/{akhir}','LaporanController@preview');
 
     //Pengajuan
     Route::get('/pengajuan/cari','PengajuanController@cari');
@@ -72,6 +74,7 @@ Route::group(['middleware' => ['auth','checkRole:admin']],function(){
 
 Route::group(['middleware' => ['auth','checkRole:admin,karyawan']],function(){
     Route::get('/dashboard','DashboardController@index');
+    Route::get('/dashboard/user','DashboardController@user');
     
     //Pengajuan
     Route::get('/pengajuan/create','PengajuanController@create');
@@ -80,7 +83,7 @@ Route::group(['middleware' => ['auth','checkRole:admin,karyawan']],function(){
     Route::post('/pengajuan/update/{id}','PengajuanController@update');
     Route::get('/pengajuan','PengajuanController@index');
     Route::post('/kendaraan/getnama','KendaraanController@getnama')->name('kendaraan.getnama');
-     Route::post('/pengajuan/getnama1','PengajuanController@getnama1')->name('pengajuan.getnama1');
-     Route::post('/pengajuan/getnopol','PengajuanController@getnopol')->name('pengajuan.getnopol');
+    Route::post('/pengajuan/getnama1','PengajuanController@getnama1')->name('pengajuan.getnama1');
+    Route::post('/pengajuan/getnopol','PengajuanController@getnopol')->name('pengajuan.getnopol');
     
 });
